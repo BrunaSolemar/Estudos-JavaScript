@@ -6,21 +6,18 @@
     <title>DETRAN</title>
 </head>
 <body>
-    <h1>Sistema de multas</h1>
-    Velocidade do carro <input type="number" name="txtvel" id="txtvel"> Km/h
-    <input type="button" value="Verificar" onclick="calcular">
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h 
+    <input type="button" value="Verificar" onclick="calcular()">
     <div id="res">
 
     </div>
-
     <script>
-        
-        function calcular(){
+        function calcular() {
             var txtv = window.document.querySelector('input#txtvel')
-            var res = window.documente.querySelector('div#res')
+            var res = window.document.querySelector('div#res')
             var vel = Number(txtv.value)
-            res.innerHTML = `Sua velucidade atual é de ${vel}`
-
+            res.innerHTML = `Sua velocidade atual é ${vel}`
         }
     </script>
 </body>
