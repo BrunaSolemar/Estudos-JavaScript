@@ -7,22 +7,23 @@
 </head>
 <body>
     <h1>Sistema de nacionalidade</h1>
-    Seu país é: <input type="text" name="txtnac" id="txtnac">
+    Seu país é: <input type="text" name="naci" id="naci">
     <input type="button" value="Verificar" onclick="verificar()">
 
     <div id="res"></div>
 
     <script>
-        function verificar (){
-        var nac = 'Brasil'
-        var txtna = window.document.querySelector('input#txtnac')
+        function verificar(){
+        
+        var naci = window.document.querySelector('input#naci').value.toLowerCase()
+        var nac = 'brasil'
         var res = window.document.querySelector('div#res')
-        res.innerHTML = `Sua nacionalidade é ${txtnac}`
-        if (nac == 'Brasil'){
-            res.innerHTML = '<p>Você é brasileiro </p>'
-        }else{
-            res.innerHTML = '<p>Você é estrangeito</p>'
-        }
+
+       if (naci === nac){
+        res.innerHTML = `Sua nacionalidade é: <strong>brasileira</strong>`
+       }else{
+        res.innerHTML = `Você é estrangeiro`
+       }
     }
     </script>
 </body>
