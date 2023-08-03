@@ -33,7 +33,7 @@
             <input type="reset" value="Limpar">
         </p>
 
-        <div id="res"></div>
+        <div id="resultado"></div>
         
 
 
@@ -48,7 +48,7 @@
         let nomeGamer = ''
         let sobrenomeGamer =''
 
-        switch (imes){
+        switch (mes){
             case 1:
                 nomeGamer = 'Arqueiro'
                 break
@@ -83,9 +83,113 @@
                 nomeGamer = 'Barbaro'
                 break
             case 12:
-             nomeGamer = 'Atirador'
+                nomeGamer = 'Atirador'
+                break
+
+            default: 
+                nomeGamer = 'Indefinido'
 
         }
+
+        switch (dia) {
+            case 1: 
+                sobrenomeGamer = 'Protetor de novatos'
+                break
+            case 2:
+                sobrenomeGamer = 'Domador de Dragões'
+                break
+            case 3:
+                sobrenomeGamer = 'Líder da Guilda'
+                break
+            case 4:
+                sobrenomeGamer = 'Especialista em Questes'
+                break
+            case 5:
+                sobrenomeGamer = 'Que só Mata Largado'
+                break 
+            case 6:
+                sobrenomeGamer = 'Da Build Errada'
+                break
+            case 7:
+                sobrenomeGamer = 'Odiado do Server'
+                break
+            case 8:
+                sobrenomeGamer = 'De Frag Negativo'
+                break
+            case 9:
+                sobrenomeGamer = 'Ladrão de Kill'
+                break
+            case 10:
+                sobrenomeGamer = 'Louco das Trocas'
+                break
+            case 11:
+                sobrenomeGamer = 'Mendigo de itens'
+                break
+            case 12:
+                sobrenomeGamer = 'Que só da Rage'
+                break
+            case 13:
+                sobrenomeGamer = 'Pró Player de X1'
+                break
+            case 14:
+                sobrenomeGamer = 'Que só atrasa a Party'
+                break
+            case 15:
+                sobrenomeGamer = 'Caçador de Bugs'
+                break
+            case 16:
+                sobrenomeGamer = 'Expert em Headshot'
+                break
+            case 17:
+                sobrenomeGamer = 'Fanático das Skins'
+                break
+            case 18:
+                sobrenomeGamer = ' Perdido no Mapa'
+                break
+            case 19:
+                sobrenomeGamer = 'Que não Acerta Nada'
+                break
+            case 20:
+             sobrenomeGamer = 'Viciado em Mana'
+                break
+
+            case 21:
+                sobrenomeGamer = 'Que Carrega o Time'
+                break
+            case 22:
+                sobrenomeGamer = 'Camper'
+                break
+            case 23:
+             sobrenomeGamer = 'Anti-Hackers'
+                break
+            case 24:
+                sobrenomeGamer = 'Que só Morre'
+                break
+            case 25:
+                 sobrenomeGamer = 'Dançarino da Safe Zone'
+                break
+            case 26:
+                sobrenomeGamer = 'Que Nunca Ajuda o Time'
+                break
+            case 27:
+                sobrenomeGamer = 'Explorador do Mapa'
+                break
+            case 28:
+                 sobrenomeGamer = 'Que só Loga pra Conversar'
+                break
+            case 29:
+                 sobrenomeGamer = 'Que Tanka Tudo'
+                break
+            case 30:
+                sobrenomeGamer = 'Amigo do GM'
+                break
+            case 31:
+                sobrenomeGamer = 'Expert em Bugs'
+                break
+
+        }
+        const resultadoDiv = window.document.getElementById('resultado')
+        resultadoDiv.innerText = `Seu nome gamer é: ${nomeGamer} &{sobrenomeGamer}`
 
     }
     </script>
