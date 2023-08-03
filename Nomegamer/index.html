@@ -20,18 +20,17 @@
     <h1>Qual seu nome Gamer:</h1>
     <p>
         <label for="mes">Qual mês você nasceu:</label>
-        <input type="number" name="mes" id=imes" min="1" max="12" required><br>
+        <input type="number" name="mes" id="mes" min="1" max="12" required><br>
     </p>
 
-        <p>
-            <label for="dia">Qual dia você nasceu:</label>
-            <input type="number" name="dia" id="dia" min="1" max="31" placeholder="1 a 31" required> <br>
-        </p>
+        
+    <p>
+        <label for="dia">Qual dia você nasceu:</label>
+        <input type="number" name="dia" id="dia" min="1" max="31" placeholder="1 a 31" required> <br>
+    </p>
 
-        <p>
-            <input type="submit" value="Enviar" onclick="verificar()">
-            <input type="reset" value="Limpar">
-        </p>
+            <button onclick="verificar()">Descobrir</button>
+        
 
         <div id="resultado"></div>
         
@@ -39,14 +38,14 @@
 
     <script>
 
-        function verificar(){
+        function verificar() {
 
-        const mes = parseInt(window.document.getElementById('mes').value)
+        const mes = parseInt(window.document.getElementById('mes').value);
 
-        const dia = parseInt(window.document.getElementById('dia').value)
+        const dia = parseInt(window.document.getElementById('dia').value);
 
-        let nomeGamer = ''
-        let sobrenomeGamer =''
+        let nomeGamer = '';
+        let sobrenomeGamer ='';
 
         switch (mes){
             case 1:
