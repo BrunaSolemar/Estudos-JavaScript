@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Gamer</title>
+    <style>
+        h1{
+            color: red;
+            text-align: center;
+        }
+        body > p{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual seu nome Gamer:</h1>
+    <p>
+        <label for="mes">Qual mês você nasceu:</label>
+        <input type="number" name="mes" id=imes" min="1" max="12" required><br>
+    </p>
+
+        <p>
+            <label for="dia">Qual dia você nasceu:</label>
+            <input type="number" name="dia" id="dia" min="1" max="31" placeholder="1 a 31" required> <br>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar" onclick="verificar()">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <div id="res"></div>
+        
+
+
+    <script>
+
+        function verificar(){
+
+        const mes = parseInt(window.document.getElementById('mes').value)
+
+        const dia = parseInt(window.document.getElementById('dia').value)
+
+        let nomeGamer = ''
+        let sobrenomeGamer =''
+
+        switch (imes){
+            case 1:
+                nomeGamer = 'Arqueiro'
+                break
+            case 2:
+                nomeGamer = 'Mago'
+                break
+            case 3: 
+                nomeGamer = 'Suporte'
+                break
+            case 4:
+                nomeGamer = 'Sniper'
+                break
+            case 5:
+                nomeGamer = 'Guerreiro'
+                break
+            case 6:
+                nomeGamer = 'MWP'
+                break
+            case 7:
+                nomeGamer = 'Feeder'
+                break
+            case 8:
+                nomeGamer = 'Fuzileiro'
+                break
+            case 9:
+                nomeGamer = 'NPC'
+                break
+            case 10:
+                nomeGamer = 'Noob'
+                break
+            case 11:
+                nomeGamer = 'Barbaro'
+                break
+            case 12:
+             nomeGamer = 'Atirador'
+
+        }
+
+    }
+    </script>
+</body>
+</html>
