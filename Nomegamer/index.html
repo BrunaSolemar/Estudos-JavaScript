@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nome Gamer</title>
     <style>
+
+        body{
+            background-color: rgba(0, 0, 255, 0.203);
+        }
+
         h1{
             color: red;
             text-align: center;
+            background-color: rgba(255, 0, 0, 0.167);
         }
         body > p{
             font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +35,8 @@
         <input type="number" name="dia" id="dia" min="1" max="31" placeholder="1 a 31" required> <br>
     </p>
 
-            <button onclick="verificar()">Descobrir</button>
+            <button onclick="verificar()" >Descobrir</button>
+
         
 
         <div id="resultado"></div>
@@ -49,7 +56,7 @@
 
         switch (mes){
             case 1:
-                nomeGamer = 'Arqueiro'
+                nomeGamer = 'Arqueiro' 
                 break
             case 2:
                 nomeGamer = 'Mago'
@@ -188,7 +195,7 @@
 
         }
         const resultadoDiv = window.document.getElementById('resultado')
-        resultadoDiv.innerText = `Seu nome gamer é: ${nomeGamer}  ${sobrenomeGamer}`
+        resultadoDiv.innerText = `Seu nome gamer é: ${nomeGamer} ${sobrenomeGamer}`
 
     }
     </script>
